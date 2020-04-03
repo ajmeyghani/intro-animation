@@ -1,6 +1,5 @@
 const letterAnimationIntro = {
   targets: ".letter",
-  // opacity: [0, 1],
   opacity: {
     value: [0, 1],
     easing: "easeInOutSine",
@@ -25,7 +24,7 @@ const squareAnimation = {
   translateX: [-50, 50],
   loop: true,
   easing: "steps(3)",
-  duration: 800
+  duration: 800,
 };
 
 const scaleUpSquare = {
@@ -44,19 +43,3 @@ introAnimation
   .add(scaleUpSquare)
   .add(letterAnimationIntro)
   .add(letterAnimationOutro, "+=1000");
-// introAnimation.add(squareAnimation)
-
-// const a3 = {
-//   targets: '.square',
-//   translateX: 250,
-//   direction: 'alternate',
-//   loop: true,
-//   easing: 'steps(5)'
-// }
-
-// var tl = anime.timeline({
-//   loop: true,
-//   duration: 800,
-// });
-
-// tl.add(a1).add(a3,0).add(a2)
